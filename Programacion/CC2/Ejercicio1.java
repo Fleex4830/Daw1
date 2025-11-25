@@ -24,5 +24,6 @@ public class Ejercicio1 {
         double opp = original / variable;
         System.out.println("Division: " + opp);
         System.out.println("\nSi su programa llega hasta aqui, fue arreglado con exito");
+
     }
 }
