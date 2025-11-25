@@ -23,7 +23,7 @@
         background-color: #191919;
         justify-content: center;
         width: 60%;
-        height: 400px;
+        height: 25%;
         border-radius: 10px;
         opacity: 0.8;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -35,6 +35,7 @@
         border-radius: 10px;
         opacity: 0.8;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        
       }
       .div3 {
         background-color: #191919;
@@ -48,7 +49,6 @@
         background-color: rgb(32, 64, 93);
         margin: 0; /* elimina margenes por defecto */
       }
-
       header {
         background-color: #1b2838;
         height: 95px;
@@ -56,24 +56,21 @@
         justify-content: left ;
         
       }
-
       /* Barra de navegación */
       .navbar {
-       display: flex;
+        display: flex;
         justify-content: flex-start; /* centra horizontalmente */
         align-items: center; /* centra verticalmente */
         margin-left:300px;
         padding: 15px;
-               
+            
       }
-
       /* Logo */
       .logo {
         width: 200px;
         height: auto;
         margin-right: 20px; /* espacio entre logo y enlaces */
       }
-
       /* Enlaces */
       .navbar a {
         color: white;
@@ -82,14 +79,10 @@
         font-size: 20px;
         margin: 0 15px;
         font-weight: bold; /*negrita */
-       
       }
-
-     
       .navbar a:hover {
         color: rgb(37, 110, 213);
       }
-
       .video1 {
         width: 100%;
                 box-shadow: 0 2px 10px rgba(0,0,0,0.3);
@@ -99,7 +92,7 @@
         
         flex-direction: column;
         width: 30%;
-        height: 80%;
+        height: auto;
         border-radius: 10px;
       }
       .subdiv2{
@@ -107,7 +100,7 @@
         
         flex-direction: column;
         width: 30%;
-        height: 80%;
+        height: auto;
         border-radius: 10px; /*border-radius aplica bordes al contenedor en un radio de px o %*/
       }
       .subdiv3{
@@ -115,88 +108,108 @@
         
         flex-direction: column;
         width: 30%;
-        height: 80%;
+        height: auto;
         border-radius: 10px;
       }
-
-
       .aventura{
         flex-direction: column;
         width: auto;
         height: 100%;
         border-radius: 10px;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
         margin: 5%;
+        transition: all 0.3s ease;
+        border-radius: 8px;
       }
-
-
+      .shoter:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(73, 176, 231, 0.439);
+      }
+      .accion:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(73, 176, 231, 0.439);
+      }
+      .aventura:hover{
+          transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(73, 176, 231, 0.439); 
+      }
       .accion{
         flex-direction: column;
         width: auto;
         height: 100%;
         border-radius: 10px;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
         margin: 5%;
+        transition: all 0.3s ease;
+        border-radius: 8px;
       }
-      
       .shoter{
         flex-direction: column;
         width: auto;
         height: 100%;
         border-radius: 10px;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
         margin: 5%;
+        transition: all 0.3s ease;
+        border-radius: 8px;   
       }
-
-
       .divi1{
         background-color:#2a475e ;
         width:100%;
-        height: 40%;
+        height: auto;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
-        border-radius: 10px;
+        box-shadow: 0 2px 10px rgb(73, 175, 231);
+        border-radius: 100px;
         justify-content: center;
-        font-size:larger;
+        font-size:24px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         color: white;
-        
-        
       }
       .divi2{
         background-color:#2a475e ;
         width:100%;
-        height: 40%;
+        height: auto;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
+        box-shadow: 0 2px 10px rgb(73, 175, 231);
         border-radius: 10px;
         justify-content: center;
-        font-size:larger;
+        font-size:24px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
-        color: white;
-        
+        color: white;  
       }
       .divi3{
         background-color:#2a475e ;
         width:100%;
-        height: 40%;
+        height: auto;
         display: flex;
-        box-shadow: 0 2px 10px rgb(255, 255, 255);
+        box-shadow: 0 2px 10px rgb(73, 175, 231);
         border-radius: 10px;
         justify-content: center;
-        font-size:larger;
+        font-size:24px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         color: white;
         text-align: center;
-        
+      }
+      .divinoticia {
+        background-color: yellow;
+        display: flex;
+        width:auto;
+        height: auto;
+        margin: 10px 10px;
+        justify-content: center;
         
       }
+      .GTA6{
+        width: 30%;
+        height: 30%;
+        display: flex;
+      }
+    .divnoticiatexto{
+      background-color:aqua;
+    }
     </style>
   </head>
   <body>
@@ -219,7 +232,19 @@
     <!-- estos divs son los contenedores que contienen todos los elementos en donde estaran dentro las imagenes y demas contenido-->
     <div class="principal">
       <div class="div1"><div class="subdiv1"> <img src="imagenes/jeugos_aventura.webp" type="imge/webp" class="aventura"><div class="divi1">AVENTURA</div>  </div> <div class="subdiv2"><img src="imagenes/juegos_accion.avif" type="imge/avif" class="accion"><div class="divi2">ACCION</div> </div><div class="subdiv3"> <img src="imagenes/juegos_shoter.jpg" type="imge/jpg" class="shoter"> <div class="divi3">SHOOTER</div></div> </div>
-      <div class="div2"></div>
+      <div class="div2"> <div class="divinoticia"><img src= "imagenes/logo-GTA6.png" type="imge/png" class="GTA6">
+        <div class="divnoticiatexto">  Grand Theft Auto VI llegará el 19 de noviembre de 2026
+6 de noviembre de 2025
+Hola a todos,
+
+Grand Theft Auto VI llegará el jueves 19 de noviembre de 2026.
+
+Sentimos tener que añadir más tiempo a lo que reconocemos ha sido ya una larga espera, pero estos meses extra nos permitirán terminar el juego con el nivel de calidad que esperáis y merecéis.
+
+Queremos agradeceros una vez más vuestra paciencia y apoyo. Aunque la espera será más larga, estamos deseando que los jugadores puedan descubrir el inmenso estado de Leonida y el regreso a la Vice City actual.
+
+Atentamente,
+Rockstar Games </div> </div> </div>
       <div class="div3">
         
         </div>

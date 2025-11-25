@@ -1,0 +1,6 @@
+ box-shadow: 0 0 25px 5px rgba(73, 176, 231, 0.439);  esta funcion lo que hace es
+ dar controno en sus coordenadas X,Y rdaio y grosor nos irve para eso en la sobra para el efecto 
+ 
+
+
+ flex-direction: column; este se uso para poder poner algunas imagenes de de forma de columna s
