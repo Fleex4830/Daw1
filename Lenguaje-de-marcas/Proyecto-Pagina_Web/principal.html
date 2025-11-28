@@ -195,24 +195,50 @@
         text-align: center;
       }
       .divinoticia {
-        background-color: yellow;
+        
         display: flex;
-        width:auto;
+        width:  100%;
         height: auto;
-        margin: 10px 10px;
+        margin: 20px ;
         justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        gap:10px; /*Espacio entre imagenes o contenido */
         
       }
+
+      
       .GTA6{
-        width: 30%;
-        height: 30%;
+        width: 50%;
+        height: 50%;
         display: flex;
+        border-radius: 20px;
+    
+        padding: 10px;
+        margin: 10px ;
       }
     .divnoticiatexto{
-      background-color:aqua;
+        background-color: #000000;
       display: flex;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      border-radius: 10px;
+      font-size:16px;
+      padding: 20px;
       
-
+    }
+    .GTA6_POSTER{
+    width: 50%;
+    height: 100%;
+    display: flex;
+      
+    }
+    .Rockstar_logo{
+      width: 50%;
+      height: 50%;
+      display: flex;
     }
     </style>
   </head>
@@ -236,7 +262,11 @@
     <!-- estos divs son los contenedores que contienen todos los elementos en donde estaran dentro las imagenes y demas contenido-->
     <div class="principal">
       <div class="div1"><div class="subdiv1"> <img src="imagenes/jeugos_aventura.webp" type="imge/webp" class="aventura"><div class="divi1">AVENTURA</div>  </div> <div class="subdiv2"><img src="imagenes/juegos_accion.avif" type="imge/avif" class="accion"><div class="divi2">ACCION</div> </div><div class="subdiv3"> <img src="imagenes/juegos_shoter.jpg" type="imge/jpg" class="shoter"> <div class="divi3">SHOOTER</div></div> </div>
-      <div class="div2"> <div class="divinoticia"><img src= "imagenes/logo-GTA6.png" type="imge/png" class="GTA6">
+      <div class="div2">
+        <div class="divinoticia">
+        <img src="imagenes/GTA6_LOGO.webp" alt="Logo GTA6" class="GTA6">
+        <img src="imagenes/GTA6_POSTER.jpg" alt="Poster GTA6" class="GTA6_POSTER">
+        <img src="imagenes/ROCKSTAR_LOGO.png" alt="Logo Rockstar" class="Rockstar_logo">
         <div class="divnoticiatexto">  Grand Theft Auto VI llegará el 19 de noviembre de 2026
 6 de noviembre de 2025
 Hola a todos,
@@ -248,7 +278,7 @@ Sentimos tener que añadir más tiempo a lo que reconocemos ha sido ya una larga
 Queremos agradeceros una vez más vuestra paciencia y apoyo. Aunque la espera será más larga, estamos deseando que los jugadores puedan descubrir el inmenso estado de Leonida y el regreso a la Vice City actual.
 
 Atentamente,
-Rockstar Games </div> </div> </div>
+Rockstar Games. </div> </div> </div>
       <div class="div3">
         
         </div>
