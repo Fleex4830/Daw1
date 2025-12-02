@@ -6,6 +6,7 @@ public class Algortimo_principal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
+        int[] v = null;
 
         do {
             Algoritmo_funciones.menu_algoritmo();
@@ -15,21 +16,24 @@ public class Algortimo_principal {
 
                 case 1:
                     System.out.println("Ingresa un array");
-                    Algoritmo_funciones.relleno_array(sc);
+                    v = Algoritmo_funciones.relleno_array(sc);
 
                     break;
                 case 2:
                     System.out.println("Accediento a Buble Sort");
-                    Algoritmo_funciones.buble_sort(sc, null);
+                    Algoritmo_funciones.buble_sort(sc, v);
+                    System.out.println("Resultado: " + Arrays.toString(v));
                     break;
 
                 case 3:
                     System.out.println("Accediento a Selection Sort");
-                    Algoritmo_funciones.selection_sort(sc, null);
+                    Algoritmo_funciones.selection_sort(sc, v);
+                    System.out.println("Resultado: " + Arrays.toString(v));
                     break;
                 case 4:
                     System.out.println("Accediento a Insertion");
-                    Algoritmo_funciones.insertion_sort(sc, null);
+                    Algoritmo_funciones.insertion_sort(sc, v);
+                    System.out.println("Resultado: " + Arrays.toString(v));
                     break;
 
                 default:
