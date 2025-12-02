@@ -31,7 +31,7 @@
       .div2 {
         background-color: #191919;
         width: 60%;
-        height: auto;
+        height: 550px;
         border-radius: 10px;
         opacity: 0.8;
         justify-content: center;
@@ -41,7 +41,7 @@
       .div3 {
         background-color: #191919;
         width: 60%;
-        height: 100px;
+        height: auto;
         border-radius: 10px;
         opacity: 0.8;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
@@ -197,48 +197,82 @@
       .divinoticia {
         
         display: flex;
+        flex-direction: row;
         width:  100%;
-        height: auto;
-        margin: 20px ;
+        height: 100%;
         justify-content: center;
+        align-items: center;
         border-radius: 10px;
-        padding: 20px;
-        gap:10px; /*Espacio entre imagenes o contenido */
+        gap:20px; /*Espacio entre imagenes o contenido */
         
       }
 
+      .divimg1 {
+        width: 30%;
+        height: 90%;
+      }
+
+      .divimg23{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 90%;
+        gap: 20px;
+      }
       
       .GTA6{
-        width: 50%;
+        width: 100%;
         height: 50%;
-        display: flex;
         border-radius: 20px;
-    
-        padding: 10px;
-        margin: 10px ;
+        transition: all 0.3s ease;
+        border-radius: 8px;
       }
+      .GTA6:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.439);
+      }
+
     .divnoticiatexto{
-        background-color: #000000;
-      display: flex;
+      background-color: #000000;
+      width: 30%;
+      height: 90%;
+      border-radius: 10px;
+    }
+
+    .divnoticiatextotxt{
+      font-size:18px;
       color: white;
       font-weight: bold;
       text-align: center;
+      align-items: center;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 10px;
-      font-size:16px;
-      padding: 20px;
-      
+      margin: 5%;
     }
+    
     .GTA6_POSTER{
-    width: 50%;
+    width: 100%;
     height: 100%;
-    display: flex;
-      
+    border-radius: 20px;
+      transition: all 0.3s ease;
+        border-radius: 8px;
     }
+
+    .GTA6_POSTER:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(252, 252, 252, 0.439);
+      }
     .Rockstar_logo{
-      width: 50%;
+      width: 100%;
       height: 50%;
-      display: flex;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+        border-radius: 8px;
+    
+    }
+
+    .Rockstar_logo:hover{
+      transform: scale(1.1);
+        box-shadow: 0 0 25px 5px rgba(252, 252, 252, 0.439);
     }
     </style>
   </head>
@@ -261,28 +295,70 @@
 
     <!-- estos divs son los contenedores que contienen todos los elementos en donde estaran dentro las imagenes y demas contenido-->
     <div class="principal">
-      <div class="div1"><div class="subdiv1"> <img src="imagenes/jeugos_aventura.webp" type="imge/webp" class="aventura"><div class="divi1">AVENTURA</div>  </div> <div class="subdiv2"><img src="imagenes/juegos_accion.avif" type="imge/avif" class="accion"><div class="divi2">ACCION</div> </div><div class="subdiv3"> <img src="imagenes/juegos_shoter.jpg" type="imge/jpg" class="shoter"> <div class="divi3">SHOOTER</div></div> </div>
+      <div class="div1">
+        <div class="subdiv1"> <img src="imagenes/jeugos_aventura.webp" type="imge/webp" class="aventura">
+          <div class="divi1">AVENTURA</div>  
+        </div> 
+        <div class="subdiv2"><img src="imagenes/juegos_accion.avif" type="imge/avif" class="accion">
+          <div class="divi2">ACCION</div> 
+        </div>
+        <div class="subdiv3"> <img src="imagenes/juegos_shoter.jpg" type="imge/jpg" class="shoter"> 
+            <div class="divi3">SHOOTER</div>
+        </div> 
+      </div>
+
       <div class="div2">
         <div class="divinoticia">
-        <img src="imagenes/GTA6_LOGO.webp" alt="Logo GTA6" class="GTA6">
-        <img src="imagenes/GTA6_POSTER.jpg" alt="Poster GTA6" class="GTA6_POSTER">
-        <img src="imagenes/ROCKSTAR_LOGO.png" alt="Logo Rockstar" class="Rockstar_logo">
-        <div class="divnoticiatexto">  Grand Theft Auto VI llegará el 19 de noviembre de 2026
-6 de noviembre de 2025
-Hola a todos,
 
-Grand Theft Auto VI llegará el jueves 19 de noviembre de 2026.
+          <div class="divimg1">
+            <img src="imagenes/GTA6_POSTER.jpg" alt="Poster GTA6" class="GTA6_POSTER">
+          </div>
 
-Sentimos tener que añadir más tiempo a lo que reconocemos ha sido ya una larga espera, pero estos meses extra nos permitirán terminar el juego con el nivel de calidad que esperáis y merecéis.
+          <div class="divimg23">
+            <img src="imagenes/GTA6_LOGO.webp" alt="Logo GTA6" class="GTA6">
+            <img src="imagenes/ROCKSTAR_LOGO.png" alt="Logo Rockstar" class="Rockstar_logo">
+          </div>
+          
+          <div class="divnoticiatexto">  <div class="divnoticiatextotxt">Grand Theft Auto VI llegará el 19 de noviembre de 2026
+            6 de noviembre de 2025
+            Hola a todos,
 
-Queremos agradeceros una vez más vuestra paciencia y apoyo. Aunque la espera será más larga, estamos deseando que los jugadores puedan descubrir el inmenso estado de Leonida y el regreso a la Vice City actual.
+            Grand Theft Auto VI llegará el jueves 19 de noviembre de 2026.
 
-Atentamente,
-Rockstar Games. </div> </div> </div>
-      <div class="div3">
-        
-        </div>
+            Sentimos tener que añadir más tiempo a lo que reconocemos ha sido ya una larga espera, pero estos meses extra nos permitirán terminar el juego con el nivel de calidad que esperáis y merecéis.
+
+            Queremos agradeceros una vez más vuestra paciencia y apoyo. Aunque la espera será más larga, estamos deseando que los jugadores puedan descubrir el inmenso estado de Leonida y el regreso a la Vice City actual.
+
+            Atentamente,
+            Rockstar Games. </div>
+          </div> 
+        </div> 
       </div>
-    </div>
+
+      <div class="div3">
+        <div class="divinoticia">
+
+          <div class="divimg1">
+            <img src="imagenes/GTA6_POSTER.jpg" alt="Poster GTA6" class="GTA6_POSTER">
+          </div>
+
+          <div class="divimg23">
+            <img src="imagenes/GTA6_LOGO.webp" alt="Logo GTA6" class="GTA6">
+            <img src="imagenes/ROCKSTAR_LOGO.png" alt="Logo Rockstar" class="Rockstar_logo">
+          </div>
+          
+          <div class="divnoticiatexto">  <div class="divnoticiatextotxt">Grand Theft Auto VI llegará el 19 de noviembre de 2026
+            6 de noviembre de 2025
+            Hola a todos,
+
+            Grand Theft Auto VI llegará el jueves 19 de noviembre de 2026.
+
+            Sentimos tener que añadir más tiempo a lo que reconocemos ha sido ya una larga espera, pero estos meses extra nos permitirán terminar el juego con el nivel de calidad que esperáis y merecéis.
+
+            Queremos agradeceros una vez más vuestra paciencia y apoyo. Aunque la espera será más larga, estamos deseando que los jugadores puedan descubrir el inmenso estado de Leonida y el regreso a la Vice City actual.
+
+            Atentamente,
+            Rockstar Games. </div>
+      </div>
   </body>
-</html>
+</html>   
