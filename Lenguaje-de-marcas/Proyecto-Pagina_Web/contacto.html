@@ -8,7 +8,7 @@
     <style>
       body {
         background-color: rgb(32, 64, 93);
-        margin: 0; /* elimina margenes por defecto */
+        margin: 0;
       }
 
       header {
@@ -18,24 +18,20 @@
         justify-content: left;
       }
 
-      /* Barra de navegación */
       .navbar {
-       display: flex;
-        justify-content: flex-start; /* centra horizontalmente */
-        align-items: center; /* centra verticalmente */
-        margin-left:300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 300px;
         padding: 15px;
-               
       }
 
-      /* Logo */
       .logo {
         width: 200px;
         height: auto;
-        margin-right: 20px; /* espacio entre logo y enlaces */
+        margin-right: 20px;
       }
 
-      /* Enlaces */
       .navbar a {
         color: white;
         text-decoration: none;
@@ -44,30 +40,179 @@
           sans-serif;
         font-size: 20px;
         margin: 0 15px;
-        font-weight: bold; /*negrita */
+        font-weight: bold;
       }
 
       .navbar a:hover {
-        color: blue;
+        color: rgb(0, 136, 254);
       }
 
-      .video1 {
+      /* CONTENEDOR PRINCIPAL DE CONTACTO */
+      .contacto_principal {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
+        margin-top: 40px;
+        gap: 30px;
+      }
+
+      .contacto_caja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #191919;
+        width: 60%;
+        height: 560px;
+        padding: 30px;
+        border-radius: 10px;
+        opacity: 0.9;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-family: system-ui;
+      }
+
+      .contacto_caja h2 {
+        margin: 0;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+
+      .contacto_caja p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      /* FORMULARIO */
+      form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+      }
+
+      textarea {
+        resize: none;
+        height: 130px;
+      }
+
+      .btn_enviar {
+        background-color: rgb(32, 64, 93);
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn_enviar:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.958);
+      }
+
+      /* FOOTER */
+      .footer {
+        background-color: #1b2838;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: none;
+        font-family: system-ui;
+        font-size: 20px;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      .footer-content {
+        text-align: center;
+        padding: 20px;
+        color: white;
       }
     </style>
   </head>
+
   <body>
     <header>
       <nav class="navbar">
         <a href="principal.html">
-          <img src="imagenes/logo_sinfondo.png" alt="logo barra" class="logo" />
+          <img src="imagenes/logo_sinfondo.png" class="logo" />
         </a>
         <a href="tienda.html">Tienda</a>
         <a href="Comunidad.html">Comunidad</a>
-        <a href="nosotros.html">Nosotros</a>
         <a href="contacto.html" style="color: rgb(0, 136, 254)">Contacto</a>
       </nav>
     </header>
+
+    <div class="contacto_principal">
+      <div class="contacto_caja">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes duda y quieres aportar algo de valor a nuestra tienda no
+          dudes en enviar un correo !!.
+        </p>
+
+        <form
+          action="mailto:noobland.soporte@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <input
+            type="text"
+            name="Nombre"
+            placeholder="Tu nombre completo"
+            required
+          />
+
+          <input
+            type="email"
+            name="Correo"
+            placeholder="Tu correo electrónico"
+            required
+          />
+
+          <textarea
+            name="Mensaje"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea>
+
+          <input type="submit" class="btn_enviar" value="Enviar mensaje" />
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2025 Noobland. Todos los derechos reservados.</p>
+
+          <p>
+            Síguenos en:
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
