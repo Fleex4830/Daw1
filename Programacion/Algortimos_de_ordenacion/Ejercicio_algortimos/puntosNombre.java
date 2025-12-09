@@ -9,6 +9,7 @@ public class puntosNombre {
 
         int opcion = 0;
         int dimension = 0;
+        String[] nombres = new String[dimension];
 
         do {
             puntosNombreFunciones.menu_algoritmo();
@@ -21,12 +22,12 @@ public class puntosNombre {
                     break;
                 case 2:
                     System.out.println("abriendo la opcion 2");
-                    puntosNombreFunciones.relleno(dimension, sc);
+                    nombres = puntosNombreFunciones.relleno(dimension, sc);
                     break;
 
                 case 3:
-                    puntosNombreFunciones.Valorletra(sc);
-                    puntosNombreFunciones.palabraValor(sc);
+                    puntosNombreFunciones.Valorletra(sc, nombres);
+                    // puntosNombreFunciones.palabraValor(sc);
                     break;
                 default:
                     break;

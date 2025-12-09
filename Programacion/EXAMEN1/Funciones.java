@@ -119,7 +119,7 @@ public class Funciones {
             }
 
         }
-
+        return 0;
     }
 
     public static String nombre_persona(Scanner sc) {
@@ -140,6 +140,8 @@ public class Funciones {
             System.out.println(tiposPase[i] + "-");
             System.out.println(acomp[i] + "-");
         }
+
+        return true;
 
     }
 
