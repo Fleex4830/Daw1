@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Noobland</title>
     <link rel="icon" href="imagenes/Logo_enlace.png" type="image/png" />
-    <!-- esta linea lo que hace es decirle al navegador que este es un type = style [CSS]-->
+
     <style>
       .principal {
         display: flex;
@@ -12,14 +12,14 @@
         width: 100%;
         height: auto;
         align-items: center;
-        gap: 30px; /* gap nos sirve para poder dar espacio entre elementos */
+        gap: 30px;
         margin-top: 10px;
       }
       .div1 {
         display: flex;
-        gap: 20px; /*poner una brecha entre elementos */
-        flex-direction: row; /*los colocamos en fila por gusto para el diseño*/
-        align-items: center; /*centramos los elementos */
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
         background-color: #191919;
         justify-content: center;
         width: 60%;
@@ -47,7 +47,7 @@
       }
       body {
         background-color: rgb(32, 64, 93);
-        margin: 0; /* elimina margenes por defecto */
+        margin: 0;
       }
       header {
         background-color: #1b2838;
@@ -58,8 +58,8 @@
       /* Barra de navegación */
       .navbar {
         display: flex;
-        justify-content: flex-start; /* centra horizontalmente */
-        align-items: center; /* centra verticalmente */
+        justify-content: flex-start;
+        align-items: center;
         margin-left: 300px;
         padding: 15px;
       }
@@ -67,7 +67,7 @@
       .logo {
         width: 200px;
         height: auto;
-        margin-right: 20px; /* espacio entre logo y enlaces */
+        margin-right: 20px;
       }
       /* Enlaces */
       .navbar a {
@@ -78,7 +78,7 @@
           sans-serif;
         font-size: 20px;
         margin: 0 15px;
-        font-weight: bold; /*negrita */
+        font-weight: bold;
       }
       .navbar a:hover {
         color: rgb(37, 110, 213);
@@ -101,7 +101,7 @@
         flex-direction: column;
         width: 30%;
         height: auto;
-        border-radius: 10px; /*border-radius aplica bordes al contenedor en un radio de px o %*/
+        border-radius: 10px;
       }
       .subdiv3 {
         display: flex;
@@ -216,7 +216,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        gap: 20px; /*Espacio entre imagenes o contenido */
+        gap: 20px;
       }
 
       .divimg1 {
@@ -287,24 +287,28 @@
         transform: scale(1.1);
         box-shadow: 0 0 25px 5px rgba(252, 252, 252, 0.439);
       }
+      /* FOOTER */
       .footer {
         background-color: #1b2838;
         width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        margin: 0%;
         display: flex;
+        justify-content: center;
+        margin-top: 40px;
       }
+
       .footer a {
         color: white;
         text-decoration: none;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
+        font-family: system-ui;
         font-size: 20px;
         margin: 0 15px;
         font-weight: bold;
+      }
+
+      .footer-content {
+        text-align: center;
+        padding: 20px;
+        color: white;
       }
     </style>
   </head>
@@ -316,7 +320,7 @@
         </a>
         <a href="tienda.html">Tienda</a>
         <a href="Comunidad.html">Comunidad</a>
-        <a href="nosotros.html">Nosotros</a>
+
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
@@ -325,7 +329,6 @@
       <source src="imagenes/video_steam.webm" type="video/webm" />
     </video>
 
-    <!-- estos divs son los contenedores que contienen todos los elementos en donde estaran dentro las imagenes y demas contenido-->
     <div class="principal">
       <div class="div1">
         <div class="subdiv1">
@@ -401,8 +404,7 @@
               calidad que esperáis y merecéis. Queremos agradeceros una vez más
               vuestra paciencia y apoyo. Aunque la espera será más larga,
               estamos deseando que los jugadores puedan descubrir el inmenso
-              estado de Leonida y el regreso a la Vice City actual. Atentamente,
-              Rockstar Games.
+              estado de Leonida y el regreso a la Vice City actual.
             </div>
           </div>
         </div>
@@ -412,14 +414,14 @@
         <div class="divinoticia">
           <div class="divimg1">
             <img
-              src="imagenes/GTA6_POSTER.jpg"
+              src="imagenes/poster_red.jpg"
               alt="Poster GTA6"
               class="GTA6_POSTER"
             />
           </div>
 
           <div class="divimg23">
-            <img src="imagenes/GTA6_LOGO.webp" alt="Logo GTA6" class="GTA6" />
+            <img src="imagenes/red.jpg" alt="Logo GTA6" class="GTA6" />
             <img
               src="imagenes/ROCKSTAR_LOGO.png"
               alt="Logo Rockstar"
@@ -429,16 +431,13 @@
 
           <div class="divnoticiatexto">
             <div class="divnoticiatextotxt">
-              Grand Theft Auto VI llegará el 19 de noviembre de 2026 6 de
-              noviembre de 2025 Hola a todos, Grand Theft Auto VI llegará el
-              jueves 19 de noviembre de 2026. Sentimos tener que añadir más
-              tiempo a lo que reconocemos ha sido ya una larga espera, pero
-              estos meses extra nos permitirán terminar el juego con el nivel de
-              calidad que esperáis y merecéis. Queremos agradeceros una vez más
-              vuestra paciencia y apoyo. Aunque la espera será más larga,
-              estamos deseando que los jugadores puedan descubrir el inmenso
-              estado de Leonida y el regreso a la Vice City actual. Atentamente,
-              Rockstar Games.
+              Red Dead Redemption 2 llegará el 6 de noviembre de 2025 Hola a
+              todos, Red Dead Redemption 2 estará disponible el jueves 6 de
+              noviembre de 2025. Somos conscientes de la gran expectación que
+              existe por este título y queremos asegurarnos de que cada detalle
+              cumpla con los estándares de calidad que nuestros jugadores
+              esperan y merecen. Agradecemos profundamente vuestra paciencia y
+              el apoyo continuo durante estos meses de desarrollo. Rockstar
             </div>
           </div>
         </div>

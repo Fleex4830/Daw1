@@ -8,7 +8,7 @@
     <style>
       body {
         background-color: rgb(32, 64, 93);
-        margin: 0; /* elimina margenes por defecto */
+        margin: 0; 
       }
 
       header {
@@ -20,12 +20,11 @@
 
       /* Barra de navegación */
       .navbar {
-       display: flex;
+        display: flex;
         justify-content: flex-start; /* centra horizontalmente */
         align-items: center; /* centra verticalmente */
-        margin-left:300px;
+        margin-left: 300px;
         padding: 15px;
-               
       }
 
       /* Logo */
@@ -47,8 +46,6 @@
         font-weight: bold; /*negrita */
       }
 
-      
-
       .navbar a:hover {
         color: blue;
       }
@@ -57,6 +54,74 @@
         width: 100%;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       }
+      /* FOOTER */
+      .footer {
+        background-color: #1b2838;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: none;
+        font-family: system-ui;
+        font-size: 20px;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      .footer-content {
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+      .principal_cont {
+          display: flex;
+          justify-content: center; 
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        .comunidad1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: stretch; 
+          background-color: #191919;
+          width: 60%;
+          border-radius: 10px;
+          opacity: 0.9;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+          padding: 20px;
+          gap: 30px; 
+        }
+
+        
+        .texto_listas {
+          flex: 1; 
+          color: white;
+          font-family: Arial, sans-serif;
+          overflow-y: auto; 
+        }
+
+        
+        .videos {
+          flex: 1; 
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; 
+          align-items: center;
+          gap: 20px;
+        }
+
+        .videos video {
+          width: 100%;
+          height: 50%; 
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
     </style>
   </head>
   <body>
@@ -67,9 +132,94 @@
         </a>
         <a href="tienda.html">Tienda</a>
         <a href="Comunidad.html" style="color: rgb(0, 136, 254)">Comunidad</a>
-        <a href="nosotros.html">Nosotros</a>
+
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
+
+    <div class="principal_cont">
+      <div class="comunidad1">
+        
+      <div class="texto_listas">
+          <h2>Comunidad Noobland</h2>
+
+          <!-- Lista no ordenada -->
+          <h3>Secciones populares</h3>
+          <ul>
+            <li>Foros de videojuegos</li>
+            <li>Guías creadas por usuarios</li>
+            <li>Clanes y grupos</li>
+            <li>Reseñas de la comunidad</li>
+          </ul>
+
+          <!-- Lista ordenada -->
+          <h3>Top 5 juegos más comentados</h3>
+          <ol>
+            <li>Dark Souls II</li>
+            <li>Kindom Night 1</li>
+            <li>Where Winds Meet</li>
+            <li>The Witcher 3</li>
+            <li>Minecraft</li>
+          </ol>
+
+          <!-- Lista de descripción -->
+          <h3>Tipos de publicaciones</h3>
+          <dl>
+            <dt>Guías</dt>
+            <dd>Explicaciones detalladas realizadas por jugadores.</dd>
+
+            <dt>Clips</dt>
+            <dd>Videos cortos con jugadas destacadas.</dd>
+
+            <dt>Debates</dt>
+            <dd>Conversaciones entre usuarios sobre diferentes temas.</dd>
+          </dl>
+
+          <!-- NUEVO BLOQUE DE AUDIO -->
+          <div class="audio_box">
+            <h3>Escucha la música nueva de Elden Ring</h3>
+            <audio controls>
+              <source src="imagenes/videoplayback.webm" type="audio/webm" />
+              
+            </audio>
+          </div>
+    </div>
+
+        
+        <div class="videos">
+          <video
+            controls
+            class="video_1"
+            src="imagenes/it_takes.webm"
+            autoplay
+            loop
+          ></video>
+
+          <video
+            controls
+            class="video_2"
+            src="imagenes/video2.webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </div>
+    </div>
+
+      <div class="footer">
+        <footer>
+          <div class="footer-content">
+            <p>&copy; 2025 Noobland. Todos los derechos reservados.</p>
+            <p>
+              Síguenos en:
+              <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+              <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
