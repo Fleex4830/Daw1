@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tienda</title>
-    <link rel="icon" href="imagenes/Logo_enlace.png" type="image/png" />
+    <link rel="icon" href="imagenes/Logo_enlace.png" />
 
     <style>
       body {
         background-color: rgb(32, 64, 93);
-        margin: 0; 
+        margin: 0;
       }
 
       header {
@@ -20,19 +20,18 @@
 
       /* Barra de navegación */
       .navbar {
-      display: flex;
-        justify-content: flex-start; 
-        align-items: center; 
-        margin-left:300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 300px;
         padding: 15px;
-
       }
 
       /* Logo */
       .logo {
         width: 200px;
         height: auto;
-        margin-right: 20px; 
+        margin-right: 20px;
       }
 
       /* Enlaces */
@@ -44,7 +43,7 @@
           sans-serif;
         font-size: 20px;
         margin: 0 15px;
-        font-weight: bold; 
+        font-weight: bold;
       }
 
       .navbar a:hover {
@@ -78,19 +77,19 @@
         padding: 20px;
         color: white;
       }
-      .tienda_principal{
+      .tienda_principal {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
         align-items: center;
-        gap: 30px; 
+        gap: 30px;
         margin-top: 10px;
       }
-      .div1_principal{
+      .div1_principal {
         display: flex;
-        gap: 20px; 
-        flex-direction: column; 
+        gap: 20px;
+        flex-direction: column;
         align-items: center;
         background-color: #191919;
         justify-content: center;
@@ -100,11 +99,11 @@
         opacity: 0.8;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       }
-      .div2_principal{
+      .div2_principal {
         display: flex;
-        gap: 20px; 
-        flex-direction: row; 
-        align-items: center; 
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
         background-color: #191919;
         justify-content: center;
         width: 60%;
@@ -112,17 +111,17 @@
         border-radius: 10px;
         opacity: 0.8;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        flex-direction: row ;
+        flex-direction: row;
       }
       .tabla_juego {
         width: 80%;
-        margin: 0 auto; 
+        margin: 0 auto;
         border-spacing: 30px;
       }
 
       .tabla_juego td {
         display: flex;
-        align-items: center; 
+        align-items: center;
         flex-direction: row;
         padding: 20px;
         background-color: rgba(32, 64, 93, 0.8);
@@ -130,7 +129,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.929);
       }
 
-      .celda_imagen{
+      .celda_imagen {
         width: 40%;
         margin-right: 20px;
         transition: all 0.3s ease;
@@ -144,11 +143,11 @@
 
       .celda_imagen img {
         width: 100%;
-        height: auto; 
+        height: auto;
         border-radius: 10px;
       }
 
-      .celda_texto{
+      .celda_texto {
         width: 60%;
         color: white;
       }
@@ -163,40 +162,36 @@
         font-size: 16px;
       }
 
-      .cont_img1{
-        
+      .cont_img1 {
         width: 20%;
         height: 80%;
       }
 
-      .cont_img2{
-        
+      .cont_img2 {
         width: 20%;
         height: 80%;
       }
 
-      .cont_img3{
-        
+      .cont_img3 {
         width: 20%;
         height: 80%;
       }
-      .cont_img4{
-        
+      .cont_img4 {
         width: 20%;
         height: 80%;
       }
 
       .img_bajo {
-        width:100%;
+        width: 100%;
         height: 50%;
         border-radius: 10px;
         box-shadow: white;
         transition: all 0.3s ease;
       }
 
-      .img_bajo:hover{
+      .img_bajo:hover {
         transform: scale(1.1);
-              box-shadow: 0 0 25px 5px rgba(252, 252, 252, 0.439);
+        box-shadow: 0 0 25px 5px rgba(252, 252, 252, 0.439);
       }
     </style>
   </head>
@@ -206,30 +201,37 @@
         <a href="principal.html">
           <img src="imagenes/logo_sinfondo.png" alt="logo barra" class="logo" />
         </a>
-        <a href="tienda.html" style="color:rgb(0, 136, 254)">Tienda</a>
+        <a href="tienda.html" style="color: rgb(0, 136, 254)">Tienda</a>
         <a href="Comunidad.html">Comunidad</a>
-        
+
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
 
-
     <!-- aqui crearemos tanto los contenedores de la tienda como nuestofooter -->
-    <div class=" tienda_principal">
+    <div class="tienda_principal">
       <div class="div1_principal">
         <table class="tabla_juego" cellpadding="10">
           <tr>
             <td>
               <div class="celda_imagen">
-                <a href="https://store.steampowered.com/app/1094600/Kingdom_of_Night/"target="_blank" class="imglink">
-                <img src="imagenes/kindom_night.jpg" alt="Juego 1">
+                <a
+                  href="https://store.steampowered.com/app/1094600/Kingdom_of_Night/"
+                  target="_blank"
+                  class="imglink"
+                >
+                  <img src="imagenes/kindom_night.jpg" alt="Juego 1" />
                 </a>
               </div>
               <div class="celda_texto">
                 <h3>Kindom Night 1</h3>
-                <p>Aventura y acción en un reino de fantasía donde luchas contra criaturas oscuras para restaurar la paz.
-                  Combate rápido, exploración de niveles, jefes, mejoras de habilidades.
-                    Plataformas: Windows, Mac, Linux, Xbox, PlayStation 5, Nintendo.</p>
+                <p>
+                  Aventura y acción en un reino de fantasía donde luchas contra
+                  criaturas oscuras para restaurar la paz. Combate rápido,
+                  exploración de niveles, jefes, mejoras de habilidades.
+                  Plataformas: Windows, Mac, Linux, Xbox, PlayStation 5,
+                  Nintendo.
+                </p>
               </div>
             </td>
           </tr>
@@ -237,15 +239,24 @@
           <tr>
             <td>
               <div class="celda_imagen">
-                <a href="https://store.steampowered.com/app/3855540/BLACK_SOULS_II/"target="_blank" class="imglink">
-                <img src="imagenes/dark_souls.jpg" alt="Juego 1">
+                <a
+                  href="https://store.steampowered.com/app/3855540/BLACK_SOULS_II/"
+                  target="_blank"
+                  class="imglink"
+                >
+                  <img src="imagenes/dark_souls.jpg" alt="Juego 1" />
                 </a>
               </div>
               <div class="celda_texto">
                 <h3>Black Souls II</h3>
-                <p>Descripción: RPG de acción conocido por su dificultad, ambientación oscura y combates exigentes mientras exploras Drangleic.
-                Género: RPG de Acción.Características: Combate táctico, alta dificultad, personalización profunda, mundo interconectado.
-                Plataformas: Windows, Mac, Linux, Xbox, PlayStation 5, Nintendo.</p>
+                <p>
+                  Descripción: RPG de acción conocido por su dificultad,
+                  ambientación oscura y combates exigentes mientras exploras
+                  Drangleic. Género: RPG de Acción.Características: Combate
+                  táctico, alta dificultad, personalización profunda, mundo
+                  interconectado. Plataformas: Windows, Mac, Linux, Xbox,
+                  PlayStation 5, Nintendo.
+                </p>
               </div>
             </td>
           </tr>
@@ -253,40 +264,48 @@
           <tr>
             <td>
               <div class="celda_imagen">
-                <a href="https://store.steampowered.com/app/3564740/Where_Winds_Meet/"target="_blank" class="imglink">
-                <img src="imagenes/where.jpg" alt="Juego 1">
+                <a
+                  href="https://store.steampowered.com/app/3564740/Where_Winds_Meet/"
+                  target="_blank"
+                  class="imglink"
+                >
+                  <img src="imagenes/where.jpg" alt="Juego 1" />
                 </a>
               </div>
               <div class="celda_texto">
                 <h3>Where Winds Meet</h3>
-                <p>Descripción: Mundo abierto ambientado en la antigua China con artes marciales, parkour y narrativa abierta.
-                Género: Acción / RPG / Mundo Abierto.Características: Combate wuxia, exploración libre, decisiones, ambientación histórica detallada.
-                Plataformas: Windows, Mac, Linux, Xbox, PlayStation 5, Nintendo.</p>
+                <p>
+                  Descripción: Mundo abierto ambientado en la antigua China con
+                  artes marciales, parkour y narrativa abierta. Género: Acción /
+                  RPG / Mundo Abierto.Características: Combate wuxia,
+                  exploración libre, decisiones, ambientación histórica
+                  detallada. Plataformas: Windows, Mac, Linux, Xbox, PlayStation
+                  5, Nintendo.
+                </p>
               </div>
             </td>
           </tr>
         </table>
-
       </div>
       <div class="div2_principal">
         <div class="cont_img1">
-          <img src="imagenes/fallout.jpg" class="img_bajo">
-          <img src="imagenes/vtol_vr.jpg" class="img_bajo">
+          <img src="imagenes/fallout.jpg" class="img_bajo" />
+          <img src="imagenes/vtol_vr.jpg" class="img_bajo" />
         </div>
         <div class="cont_img2">
-          <img src="imagenes/tactical.jpg" class="img_bajo">
-          <img src="imagenes/pistol_ship.jpg" class="img_bajo">
+          <img src="imagenes/tactical.jpg" class="img_bajo" />
+          <img src="imagenes/pistol_ship.jpg" class="img_bajo" />
         </div>
         <div class="cont_img3">
-          <img src="imagenes/amoung.jpg" class="img_bajo">
-          <img src="imagenes/pirates.jpg" class="img_bajo">
+          <img src="imagenes/amoung.jpg" class="img_bajo" />
+          <img src="imagenes/pirates.jpg" class="img_bajo" />
         </div>
         <div class="cont_img4">
-          <img src="imagenes/bathman.jpg" class="img_bajo">
-          <img src="imagenes/job.jpg" class="img_bajo">
+          <img src="imagenes/bathman.jpg" class="img_bajo" />
+          <img src="imagenes/job.jpg" class="img_bajo" />
         </div>
       </div>
-  
+
       <div class="footer">
         <footer>
           <div class="footer-content">
@@ -298,8 +317,9 @@
               <a href="https://www.twitter.com" target="_blank">Twitter</a> |
               <a href="https://www.instagram.com" target="_blank">Instagram</a>
             </p>
-          </footer>
+          </div>
+        </footer>
       </div>
-    </div>   
+    </div>
   </body>
 </html>
