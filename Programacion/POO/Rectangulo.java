@@ -1,4 +1,4 @@
-package Programacion.POO;
+package POO;
 
 public class Rectangulo {
     // creamos los datos privados que utilizaremos dentro de esta clase

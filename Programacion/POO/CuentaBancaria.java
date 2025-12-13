@@ -1,4 +1,4 @@
-package Programacion.POO;
+package POO;
 
 public class CuentaBancaria {
 

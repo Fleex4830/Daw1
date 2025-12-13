@@ -63,7 +63,6 @@
         align-items: center;
         background-color: #191919;
         width: 60%;
-        height: 560px;
         padding: 30px;
         border-radius: 10px;
         opacity: 0.9;
@@ -175,27 +174,94 @@
           method="POST"
           enctype="text/plain"
         >
+          <label for="nombre">Nombre completo:</label>
           <input
             type="text"
+            id="nombre"
             name="Nombre"
             placeholder="Tu nombre completo"
             required
+            pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ ]{3,40}"
           />
 
+          <label for="email">Correo electrónico:</label>
           <input
             type="email"
+            id="email"
             name="Correo"
             placeholder="Tu correo electrónico"
             required
           />
 
+          <label for="password">Contraseña (mín. 6 caracteres):</label>
+          <input
+            type="password"
+            id="password"
+            name="Contrasena"
+            minlength="6"
+            required
+          />
+
+          <label for="edad">Edad:</label>
+          <input
+            type="number"
+            id="edad"
+            name="Edad"
+            min="12"
+            max="99"
+            required
+          />
+
+          <label for="fecha">Fecha del mensaje:</label>
+          <input type="date" id="fecha" name="Fecha" />
+
+          <label>Género:</label>
+          <div>
+            <input type="radio" id="gen_h" name="Genero" value="Hombre" />
+            <label for="gen_h">Hombre</label>
+
+            <input type="radio" id="gen_m" name="Genero" value="Mujer" />
+            <label for="gen_m">Mujer</label>
+
+            <input type="radio" id="gen_o" name="Genero" value="Otro" />
+            <label for="gen_o">Otro</label>
+          </div>
+
+          <label for="motivo">Motivo del mensaje:</label>
+          <select id="motivo" name="Motivo">
+            <option value="soporte">Soporte técnico</option>
+            <option value="reembolso">Solicitud de reembolso</option>
+            <option value="sugerencia">Sugerencia para la web</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="juego">Juego favorito (autocompletar):</label>
+          <input list="lista_juegos" id="juego" name="Juego" />
+          <datalist id="lista_juegos">
+            <option value="Dark Souls II"></option>
+            <option value="Kingdom Night 1"></option>
+            <option value="The Witcher 3"></option>
+            <option value="Minecraft"></option>
+            <option value="Where Winds Meet"></option>
+          </datalist>
+
+          <label for="suscripcion">
+            <input type="checkbox" id="suscripcion" name="Suscripcion" />
+            Deseo recibir noticias y ofertas
+          </label>
+
+          <label for="mensaje">Mensaje:</label>
           <textarea
+            id="mensaje"
             name="Mensaje"
             placeholder="Escribe tu mensaje aquí..."
             required
           ></textarea>
 
-          <input type="submit" class="btn_enviar" value="Enviar mensaje" />
+          <div style="display: flex; gap: 10px">
+            <input type="reset" value="Restablecer" class="btn_enviar" />
+            <input type="submit" value="Enviar mensaje" class="btn_enviar" />
+          </div>
         </form>
       </div>
     </div>
